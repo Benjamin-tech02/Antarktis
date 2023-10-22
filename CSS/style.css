@@ -1,0 +1,945 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /* display: flex; */
+    /* flex-direction: column; */
+    height: 100vh;
+    background-color: #82D9FF;
+    margin: 0;
+    /* max-width: 1200px; */
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: block;
+    margin-top: 0px;
+    position:sticky;
+    top: 0;
+    background-color: #82D9FF;
+    border-bottom: 4px solid white;
+    box-shadow: 1px 1px 8px 1px #000;
+}
+
+.kvikk-hjelp{
+    display: none;
+}
+
+header div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0px 15px 0px 15px; */
+    /* position:sticky; */
+    /* top: 0px; */
+    /* border-bottom: 4px solid white; */
+    padding: 2px 15px 2px 15px;
+    /* box-shadow: 1px 1px 8px 1px #000; */
+}
+
+header div nav ul{
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background: grey;
+    top: 40px;
+    left: -100%;
+    text-align: center;
+    transition: 0.5s;
+    display: block;
+    padding-left: 0px;
+    box-shadow: 5px 0px 10px -2px #000;
+}
+
+header div nav ul li{
+    list-style-type: none;
+    width: 95%;
+    margin: 5px auto;
+}
+
+header div nav ul li a{
+    background-color: white;
+    display: block;
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: 1px solid #000;
+    border-radius: 7px;
+}
+
+header i{
+    font-size: 1.9rem;
+}
+
+header div nav ul li a:hover{
+    background: #82D9FF;
+    color: black;
+    box-shadow: 1px 1px 8px 1px #000;
+    text-decoration: none;
+}
+
+#check:checked ~ ul{
+    left: 0;
+}
+
+#logo{
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 600;
+    color: blue;
+    -webkit-text-stroke: 2px black;
+}
+
+header i:hover{
+    font-size: 31px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.checkbtn{
+    display: block;
+    margin: auto;
+    background: none;
+}
+
+#check{
+    display: none;
+}
+
+main{
+    display: block;
+    width: 100%;
+    /* margin: auto; */
+}
+
+.intro-kvote{
+    display: block;
+    align-items: center;
+    background-image: url('/img/mountain.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80%;
+    margin: 0 auto;
+    height: 210px;
+    text-align: center;
+}
+
+.intro-kvote h1{
+    padding-top: 25px;
+}
+
+.intro-kvote li{
+    /* display:contents; */
+    width: 90px;
+    list-style-type: none;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    background-color: #000;
+    /* border: 1px solid #000; */
+}
+
+.intro-kvote li a{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    width: 100%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: aliceblue;
+    text-decoration: none;
+    /* background-color: #000; */
+}
+
+.intro-kvote li a:hover{
+    color: #000;
+    cursor: pointer;
+    background: white;
+    box-shadow: 1px 1px 8px 1px;
+}
+
+.nye-produkter{
+    background-color: white;
+    display: block;
+    width: 95%;
+    /* height: 200px; */
+    /* margin: auto; */
+    margin: auto;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    /* overflow-y: hidden; */
+    /* overflow-x: auto; */
+}
+
+.nye-produkter h2{
+    text-align: center;
+    padding-top: 10px;
+    /* margin-top: 20px; */
+    margin-bottom: 10px;
+}
+
+.nye-produkter div{
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: auto;
+    /* padding-top: 50px; */
+    padding-bottom: 1rem;
+}
+
+.nye-produkter div article{
+    text-align: center;
+    background-color: lightgray;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* display: block; */
+    flex-basis: 50%;
+    min-width: 100px;
+}
+
+.nye-produkter article img{
+    width: 100%;
+}
+
+.nye-produkter article h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.nye-produkter article p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.nye-produkter div article:hover{
+    background-color: lightsalmon;
+    box-shadow: 1px 1px 8px 1px #000;
+    cursor: pointer;
+}
+
+
+.kvikk-meny{
+    display: block;
+    margin-top: 50px;
+}
+
+.kvikk-meny h2{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.kvikk-meny ul{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 0px;
+    display: flex;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+.kvikk-meny ul a{
+    display: flex;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: lightgray;
+    color: #000;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.kvikk-meny ul a:hover{
+    background-color: lightsalmon;
+    box-shadow: 1px 1px 8px 1px #000;
+    cursor: pointer;
+}
+
+/* 
+.default-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.default-flex h2{
+    flex-basis: 100%;
+}
+
+.default-flex article{
+    flex-basis: 33%;
+    min-width: 300px;
+}
+
+.default-flex article img{
+    width: 100%;
+}
+*/
+
+#bunnbar{
+    background-color: gray;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0px 15px 0px 15px;
+    box-shadow: 1px 1px 8px 1px #000;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#bunnbar nav{
+    /* background-color: #82D9FF; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    /* padding: 0px; */
+    text-align: center;
+}
+
+#bunnbar nav ul{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    gap: 0.5rem;
+}
+
+#bunnbar nav ul li{
+    justify-content: space-between;
+    /* display: block; */
+    list-style-type: none;
+    padding: 0;
+}
+
+#bunnbar nav ul li a{
+    color: white;
+    background-color: #000;
+    text-decoration: none;
+    font-size: 28px;
+    border: 1px solid #000;
+    border-radius: 7px;
+    padding: 0 3px 0 3px;
+}
+
+#bunnbar nav ul li a.home-btn {
+    background-color:gray;
+    border: 0;
+    color: #000;
+}
+
+#bunnbar nav ul li a:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 30px;
+    transition: .3s;
+}
+
+#bunnbar nav ul li a.home-btn:hover {
+    background-color: gray;
+    /* border: 0; */
+    font-size: 30px;
+    color: white;
+}
+
+#om-oss{
+    display: block;
+    width: 100%;
+    padding-bottom: 3.5rem;
+    background-color: gray;
+}
+
+#om-oss section{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0px;
+    /* background-color: #82D9FF; */
+    display: block;
+    /* margin-left: 0.5rem; */
+}
+
+#om-oss h2{
+    background-color: #82D9FF;
+    padding: 10px;
+    padding-left: 5px;
+    margin-bottom: 0px;
+}
+
+#om-oss section article{
+    display: flex;
+    padding-left: 0.5rem;
+    /* background-color: red; */
+    align-items: center;
+    gap: 1rem;
+}
+
+#om-oss section article p{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+#om-oss section article i{
+    margin-left: 0.5rem;
+    order: 0;
+    font-size: 1.5rem;
+}
+
+#om-oss section article p{
+    order: 1;
+}
+
+#adresse{
+    display: none;
+}
+
+.filter-funksjon{
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    width: 99%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgb(70, 110, 255);
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.filter-funksjon h2{
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
+
+.filter-funksjon article{
+    display: flex;
+    gap: 1.2rem;
+}
+
+.filter-funksjon article i{
+    font-size: 2.2rem;
+    color: white;
+}
+
+.filter-funksjon article i:hover{
+    cursor: pointer;
+    font-size: 2.3rem;
+}
+
+.produkt-flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:auto ;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+    width: 95%;
+    background-color: white;
+}
+
+.produkt-flex article{
+    /* display: block; */
+    margin: auto;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    /* padding-top: 0.5rem; */
+    /* justify-content: center; */
+    background-color: lightgray;
+    flex-basis: 50%;
+    max-width: 150px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.produkt-flex article img{
+    width: 100%;
+}
+
+.produkt-flex article h3{
+    margin-top: 0.5rem;
+    margin-bottom: 0.1rem;
+}
+
+.produkt-flex article p{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.produkt-flex article:hover{
+    background-color: lightsalmon;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 1px #000;
+}
+
+.retur-funksjon{
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    width: 99%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgb(70, 110, 255);
+    color: white;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.retur-funksjon h1{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.7rem;
+}
+
+.return-skjema{
+    background-color: white;
+    margin:auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 98%;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.return-skjema article{
+    font-weight: bold;
+}
+
+.return-skjema form{
+    /* background-color: red; */
+    width: 80%;
+    margin: auto;
+}
+
+.return-skjema form article{
+    /* background-color: #82D9FF; */
+    display: block;
+    margin: auto;
+}
+
+input, label{
+    background-color: lightgray;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    width: 60%;
+    font-size: 1.5rem;
+    /* text-align: center; */
+}
+
+label{
+    display: none;
+}
+
+.button{
+    width: 7rem;
+    background-color: rgb(70, 110, 255);
+    color: white;
+    font-size: 1.5rem;
+}
+
+.button:hover{
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+}
+
+@media (min-width: 700px) {
+    header{
+        background-color: lightgray;
+        border-bottom: 4px solid white;
+        box-shadow: 1px 1px 8px 1px #000;
+    }
+
+    .kvikk-hjelp{
+        padding-right: 10px;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        gap: 8px
+    }
+
+    .kvikk-hjelp a{
+        color: blue;
+    }
+
+    header div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 15px 0px 15px;
+        position:sticky;
+        top: 0px;
+        /* background-color: #82D9FF; */
+    }
+    
+    header div nav ul{
+        position: static;
+        width: 100%;
+        height: 0%;
+        background-color:lightgray;
+        transition: all 0s;
+        text-align: center;
+        padding: 0;
+        gap: 0.5rem;
+        display: flex;
+        box-shadow: 0 0 0 0 ;
+    }
+    
+    header div nav ul li{
+        display: contents;
+        padding: 4px;
+    }
+    
+    header div nav ul li a{
+        background-color: lightgray;
+        color: #000;
+        text-decoration: none;
+        border: 0;
+    }
+
+    header div nav ul li a:hover{
+        background-color: lightgray;
+        text-decoration: underline;
+        box-shadow: 0 0 0 0 #000;
+    }
+
+    .checkbtn{
+        display: none;
+    }
+
+    .intro-kvote{
+        height: 350px;
+    }
+
+    .intro-kvote h1{
+        padding-top: 70px;
+    }
+
+    .intro-kvote li{
+        width: 90px;
+    }
+
+    .kvikk-meny{
+        display: none;
+    }
+
+    .nye-produkter{
+        margin-bottom: 30px;
+    }
+
+    .produkt-flex article{
+        flex-basis: 25%;
+        max-width: 240px;
+    }
+
+    #bunnbar{
+        display: none;
+    }
+
+    #om-oss{
+        padding-bottom: 0;
+    }
+
+    #om-oss section{
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+        gap: 2rem;
+    }
+
+    #om-oss section article{
+        display: inline-flex;
+        padding-left: 0;
+    }
+
+    #om-oss h2{
+        text-align: center;
+        color: black;
+    }
+
+    #adresse{
+        display: flex;
+        justify-content: center;
+    }
+
+    .return-skjema form{
+        display: flex;
+        gap: 2rem;
+    }
+
+    input, label{
+        width: 100%;
+    }
+
+    label{
+        display: block;
+        background: none;
+    }
+
+    span{
+        order: 0;
+    
+    }
+    
+    nav{
+        order: 1;
+    
+    }
+
+    i{
+        order: 2;
+    }
+}
+
+
+
+
+
+/*
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #82D9FF;
+    margin: 0;
+    max-width: 1200px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px 0px 15px;
+    position:sticky;
+    top: 0px;
+    background-color: #82D9FF;
+    border-bottom: 4px solid white;
+    box-shadow: 1px 1px 8px 1px #000;
+}
+
+header nav ul{
+    padding: 0;
+    gap: 0.5rem;
+    display: flex;
+}
+
+header nav ul li{
+    display: block;
+    padding: 4px;
+}
+
+header nav ul li a{
+    color: #000;
+    text-decoration: none;
+}
+
+i{
+    font-size: 30px;
+}
+
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+
+#logo{
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 600;
+    color: blue;
+    -webkit-text-stroke: 2px black;
+}
+
+i:hover{
+    font-size: 31px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.default-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.default-flex h2{
+    flex-basis: 100%;
+}
+
+.default-flex article{
+    flex-basis: 33%;
+    min-width: 300px;
+}
+
+.default-flex article img{
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width: 580px) {
+    .checkbtn{
+        display: block;
+    }
+
+    header{
+        padding: 8px 15px 8px 15px;
+    }
+
+    header nav ul{
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background: grey;
+        top: 40px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        display: block;
+        box-shadow: 5px 0px 10px -2px #000;
+    }
+
+    header nav ul li{
+        width: 100%;
+        margin: 5px auto;
+    }
+
+    header nav ul li a{
+        background-color: white;
+        display: block;
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
+        border: 1px solid #000;
+        border-radius: 7px;
+    }
+
+    header nav ul li a:hover{
+        background: #82D9FF;
+        color: black;
+        box-shadow: 1px 1px 8px 1px #000;
+        text-decoration: none;
+    }
+
+   #check:checked ~ ul{
+        left: 0;
+    }
+
+    
+    #bunnbar{
+        position:sticky;
+        background-color: gray;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0px 15px 0px 15px;
+        box-shadow: 1px 1px 8px 1px #000;
+    }
+
+    #bunnbar nav{
+        background-color: #82D9FF;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0px;
+        height: 50%;
+        text-align: center;
+    }
+
+    #bunnbar nav ul{
+        background-color: red;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0px;
+        gap: 0.5rem;
+    }
+    
+    #bunnbar nav ul li{
+        justify-content: space-between;
+        display: block;
+        padding: 0px;
+    }
+    
+    #bunnbar nav ul li a{
+        color: white;
+        background-color: #000;
+        text-decoration: none;
+        font-size: 28px;
+        padding: 3px;  den her vr kommentert
+        border: 1px solid #000;
+    }
+    
+    #bunnbar nav ul li a:hover{
+        color: black;
+        background-color: white;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 30px;
+        transition: .3s;
+    }
+
+    #bunnbar nav ul li a i{
+        font-size: 28px;
+    }
+   
+    i:hover{
+        font-size: 31px;
+        transition: .3s;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 580px) {
+    
+    span{
+        order: 0;
+    
+    }
+    
+    nav{
+        order: 1;
+    
+    }
+
+    i{
+        order: 2;
+    }
+}
+
+*/
