@@ -2,15 +2,12 @@
     box-sizing: border-box;
 }
 
-.grid-container{
+body{
     display: grid;
     width: 100%;
     grid-template-rows: "header" "main" "footer";
     grid-template-columns: 100%;
     gap: 10px;
-}
-
-body{
     /* display: flex; */
     /* flex-direction: column; */
     height: 100vh;
@@ -723,7 +720,7 @@ label{
         order: 2;
     }
 
-    .grid-container{
+    body{
         width: 100%;
         grid-template-columns: repeat(3, 1fr);
     }
