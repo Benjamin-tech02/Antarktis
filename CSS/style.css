@@ -8,12 +8,9 @@ body{
     grid-template-rows: "header" "main" "footer";
     grid-template-columns: 100%;
     gap: 10px;
-    /* display: flex; */
-    /* flex-direction: column; */
     height: 100vh;
     background-color: #82D9FF;
     margin: 0;
-    /* max-width: 1200px; */
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -37,12 +34,7 @@ header div{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 0px 15px 0px 15px; */
-    /* position:sticky; */
-    /* top: 0px; */
-    /* border-bottom: 4px solid white; */
     padding: 2px 15px 2px 15px;
-    /* box-shadow: 1px 1px 8px 1px #000; */
 }
 
 header div nav ul{
@@ -117,7 +109,6 @@ header i:hover{
 main{
     display: block;
     width: 100%;
-    /* margin: auto; */
 }
 
 .intro-kvote{
@@ -137,13 +128,11 @@ main{
 }
 
 .intro-kvote li{
-    /* display:contents; */
     width: 90px;
     list-style-type: none;
     margin: 0 auto;
     font-size: 1.5rem;
     background-color: #000;
-    /* border: 1px solid #000; */
 }
 
 .intro-kvote li a{
@@ -157,7 +146,6 @@ main{
     padding-left: 5px;
     color: aliceblue;
     text-decoration: none;
-    /* background-color: #000; */
 }
 
 .intro-kvote li a:hover{
@@ -171,29 +159,22 @@ main{
     background-color: white;
     display: block;
     width: 95%;
-    /* height: 200px; */
-    /* margin: auto; */
     margin: auto;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    /* overflow-y: hidden; */
-    /* overflow-x: auto; */
 }
 
 .nye-produkter h2{
     text-align: center;
     padding-top: 10px;
-    /* margin-top: 20px; */
     margin-bottom: 10px;
 }
 
 .nye-produkter div{
     display: flex;
-    /* flex-wrap: wrap; */
     align-items: center;
     overflow-y: hidden;
     overflow-x: auto;
-    /* padding-top: 50px; */
     padding-bottom: 1rem;
 }
 
@@ -204,7 +185,6 @@ main{
     margin-right: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
-    /* display: block; */
     flex-basis: 50%;
     min-width: 100px;
 }
@@ -268,27 +248,6 @@ main{
     cursor: pointer;
 }
 
-/* 
-.default-flex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.default-flex h2{
-    flex-basis: 100%;
-}
-
-.default-flex article{
-    flex-basis: 33%;
-    min-width: 300px;
-}
-
-.default-flex article img{
-    width: 100%;
-}
-*/
-
 #bunnbar{
     background-color: gray;
     position:fixed;
@@ -301,19 +260,15 @@ main{
 }
 
 #bunnbar nav{
-    /* background-color: #82D9FF; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* width: 100%; */
     height: 50px;
-    /* padding: 0px; */
     text-align: center;
 }
 
 #bunnbar nav ul{
-    /* background-color: red; */
     display: flex;
     align-items: center;
     padding: 0px;
@@ -322,7 +277,6 @@ main{
 
 #bunnbar nav ul li{
     justify-content: space-between;
-    /* display: block; */
     list-style-type: none;
     padding: 0;
 }
@@ -354,7 +308,6 @@ main{
 
 #bunnbar nav ul li a.home-btn:hover {
     background-color: gray;
-    /* border: 0; */
     font-size: 30px;
     color: white;
 }
@@ -363,9 +316,7 @@ main{
     display: block;
     width: 100%;
     margin: auto;
-    /* padding-top: 0; */
     padding-bottom: 2.8rem;
-    /* background-color: gray; */
 }
 
 #om-oss section{
@@ -373,10 +324,7 @@ main{
     width: 100%;
     height: 100%;
     margin-bottom: 0px;
-    /* background-color: #82D9FF; */
     display: block;
-    /* margin: auto; */
-    /* margin-left: 0.5rem; */
 }
 
 
@@ -390,14 +338,12 @@ main{
 #om-oss section article{
     display: flex;
     padding-left: 0.5rem;
-    /* background-color: red; */
     align-items: center;
     gap: 1rem;
 }
 
 #om-oss section article p{
     margin-top: 0.5rem;
-    /* margin-bottom: 0.5rem; */
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
@@ -461,12 +407,9 @@ main{
 }
 
 .produkt-flex article{
-    /* display: block; */
     margin: auto;
     text-align: center;
     margin-bottom: 0.5rem;
-    /* padding-top: 0.5rem; */
-    /* justify-content: center; */
     background-color: lightgray;
     flex-basis: 50%;
     max-width: 150px;
@@ -531,13 +474,11 @@ main{
 }
 
 .return-skjema form{
-    /* background-color: red; */
     width: 80%;
     margin: auto;
 }
 
 .return-skjema form article{
-    /* background-color: #82D9FF; */
     display: block;
     margin: auto;
 }
@@ -549,7 +490,6 @@ input, label{
     margin-top: 1rem;
     width: 60%;
     font-size: 1.5rem;
-    /* text-align: center; */
 }
 
 label{
@@ -595,7 +535,6 @@ label{
         padding: 0px 15px 0px 15px;
         position:sticky;
         top: 0px;
-        /* background-color: #82D9FF; */
     }
     
     header div nav ul{
@@ -668,8 +607,6 @@ label{
 
     #om-oss section{
         display: block;
-        /* justify-content: center; */
-        /* margin: auto; */
         margin-left: 0;
         gap: 2rem;
     }
@@ -678,7 +615,6 @@ label{
         display: flex;
         justify-content: center;
         text-align: center;
-        /* margin: auto; */
         padding-left: 0;
     }
 
@@ -737,238 +673,3 @@ label{
         grid-column: span 3;
     }
 }
-
-
-
-
-
-/*
-
-*{
-    box-sizing: border-box;
-}
-
-body{
-    background-color: #82D9FF;
-    margin: 0;
-    max-width: 1200px;
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 15px 0px 15px;
-    position:sticky;
-    top: 0px;
-    background-color: #82D9FF;
-    border-bottom: 4px solid white;
-    box-shadow: 1px 1px 8px 1px #000;
-}
-
-header nav ul{
-    padding: 0;
-    gap: 0.5rem;
-    display: flex;
-}
-
-header nav ul li{
-    display: block;
-    padding: 4px;
-}
-
-header nav ul li a{
-    color: #000;
-    text-decoration: none;
-}
-
-i{
-    font-size: 30px;
-}
-
-header nav ul li a:hover{
-    text-decoration: underline;
-}
-
-#logo{
-    text-decoration: none;
-    font-size: 40px;
-    font-weight: 600;
-    color: blue;
-    -webkit-text-stroke: 2px black;
-}
-
-i:hover{
-    font-size: 31px;
-    transition: .3s;
-    cursor: pointer;
-}
-
-.checkbtn{
-    font-size: 30px;
-    color: black;
-    float: right;
-    cursor: pointer;
-    display: none;
-}
-
-#check{
-    display: none;
-}
-
-.default-flex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.default-flex h2{
-    flex-basis: 100%;
-}
-
-.default-flex article{
-    flex-basis: 33%;
-    min-width: 300px;
-}
-
-.default-flex article img{
-    width: 100%;
-}
-
-
-
-@media only screen and (max-width: 580px) {
-    .checkbtn{
-        display: block;
-    }
-
-    header{
-        padding: 8px 15px 8px 15px;
-    }
-
-    header nav ul{
-        position: fixed;
-        width: 50%;
-        height: 100vh;
-        background: grey;
-        top: 40px;
-        left: -100%;
-        text-align: center;
-        transition: all 0.5s;
-        display: block;
-        box-shadow: 5px 0px 10px -2px #000;
-    }
-
-    header nav ul li{
-        width: 100%;
-        margin: 5px auto;
-    }
-
-    header nav ul li a{
-        background-color: white;
-        display: block;
-        color: black;
-        font-size: 20px;
-        text-decoration: none;
-        border: 1px solid #000;
-        border-radius: 7px;
-    }
-
-    header nav ul li a:hover{
-        background: #82D9FF;
-        color: black;
-        box-shadow: 1px 1px 8px 1px #000;
-        text-decoration: none;
-    }
-
-   #check:checked ~ ul{
-        left: 0;
-    }
-
-    
-    #bunnbar{
-        position:sticky;
-        background-color: gray;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-        padding: 0px 15px 0px 15px;
-        box-shadow: 1px 1px 8px 1px #000;
-    }
-
-    #bunnbar nav{
-        background-color: #82D9FF;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 0px;
-        height: 50%;
-        text-align: center;
-    }
-
-    #bunnbar nav ul{
-        background-color: red;
-        display: flex;
-        align-items: center;
-        height: 100%;
-        padding: 0px;
-        gap: 0.5rem;
-    }
-    
-    #bunnbar nav ul li{
-        justify-content: space-between;
-        display: block;
-        padding: 0px;
-    }
-    
-    #bunnbar nav ul li a{
-        color: white;
-        background-color: #000;
-        text-decoration: none;
-        font-size: 28px;
-        padding: 3px;  den her vr kommentert
-        border: 1px solid #000;
-    }
-    
-    #bunnbar nav ul li a:hover{
-        color: black;
-        background-color: white;
-        cursor: pointer;
-        text-decoration: none;
-        font-size: 30px;
-        transition: .3s;
-    }
-
-    #bunnbar nav ul li a i{
-        font-size: 28px;
-    }
-   
-    i:hover{
-        font-size: 31px;
-        transition: .3s;
-        cursor: pointer;
-    }
-}
-
-@media (min-width: 580px) {
-    
-    span{
-        order: 0;
-    
-    }
-    
-    nav{
-        order: 1;
-    
-    }
-
-    i{
-        order: 2;
-    }
-}
-
-*/
