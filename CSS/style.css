@@ -127,6 +127,10 @@ main{
     padding-top: 25px;
 }
 
+.intro-kvote ul{
+    padding-left: 0;
+}
+
 .intro-kvote li{
     width: 90px;
     list-style-type: none;
@@ -412,7 +416,7 @@ main{
     margin-bottom: 0.5rem;
     background-color: lightgray;
     flex-basis: 50%;
-    max-width: 150px;
+    max-width: 145px;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -471,6 +475,7 @@ main{
 
 .return-skjema article{
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .return-skjema form{
@@ -488,8 +493,12 @@ input, label{
     display: block;
     margin: auto;
     margin-top: 1rem;
-    width: 60%;
+    width: 80%;
     font-size: 1.5rem;
+}
+
+input{
+    font-size: 1rem;
 }
 
 label{
@@ -497,6 +506,8 @@ label{
 }
 
 .button{
+    display: flex;
+    justify-content: center;
     width: 7rem;
     background-color: rgb(70, 110, 255);
     color: white;
@@ -635,6 +646,7 @@ label{
 
     input, label{
         width: 100%;
+        font-size: 1.5rem;
     }
 
     label{
