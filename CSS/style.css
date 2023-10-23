@@ -222,6 +222,7 @@ main{
 .kvikk-meny h2{
     display: block;
     margin-bottom: 5px;
+    padding-left: 5px;
 }
 
 .kvikk-meny ul{
